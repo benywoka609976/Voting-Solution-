@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>UnivVote — Live Demo</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="demo.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="header">
+  <h1>UnivVote — AI-Powered Election Demo</h1>
+  <p>Prototype Frontend (GitHub Pages)</p>
+</div>
+
+<div class="section">
+  <h2>Live Results</h2>
+  <canvas id="resultsChart" width="400" height="250"></canvas>
+</div>
+
+<div class="section">
+  <h2>Cast a Vote (Demo)</h2>
+  <select id="candidateSelect"></select>
+  <button onclick="demoCastVote()">Cast Vote</button>
+  <p id="voteResponse"></p>
+</div>
+
+<div class="section">
+  <h2>MPESA Donation Demo</h2>
+  <input id="phone" placeholder="2547XXXXXXXX">
+  <input id="amount" type="number" placeholder="Amount">
+  <button onclick="mpesaDonate()">Donate</button>
+  <p id="mpesaResponse"></p>
+</div>
+
+</body>
+</html>
